@@ -16,7 +16,6 @@ The framework explores mechanisms for:
 <img width="1024" height="1536" alt="FIG1_architecture" src="https://github.com/user-attachments/assets/c80c29a5-c214-40ff-ab7a-b54efdfeee55" />
 
 ---
-
 ## Core Concepts
 
 TriTrap introduces a model where inference execution must be explicitly authorized and verified.
