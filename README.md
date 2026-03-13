@@ -6,7 +6,8 @@ Core research and architecture documentation for the TriTrap execution framework
 
 ## Architecture
 
-![TriTrap Architecture](figures/FIG.1.png)
+<img width="1024" height="1536" alt="FIG1_architecture" src="https://github.com/user-attachments/assets/c80c29a5-c214-40ff-ab7a-b54efdfeee55" />
+
 
 TriTrap is a governed execution architecture for deterministic artificial intelligence inference workloads.
 
