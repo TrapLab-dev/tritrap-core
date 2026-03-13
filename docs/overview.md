@@ -12,7 +12,8 @@ The goal of the architecture is to improve reliability, governance, and reproduc
 
 The high-level architecture of TriTrap is illustrated below.
 
-![TriTrap Architecture](../figures/FIG.1.png)
+<img width="1024" height="1536" alt="FIG1_architecture" src="https://github.com/user-attachments/assets/c7933d63-48ed-4ff0-a1ca-ebefa44c95c6" />
+
 
 **FIG.1 — TriTrap System Architecture**
 
@@ -43,7 +44,8 @@ The architecture is designed to enable deterministic and auditable execution flo
 
 Permits represent authorization for a specific execution request.
 
-![Permit Structure](../figures/FIG.2.png)
+<img width="1024" height="1536" alt="FIG2_permit_structure" src="https://github.com/user-attachments/assets/33a25613-5403-4c07-93b1-bd8809df6705" />
+
 
 **FIG.2 — Permit Structure**
 
@@ -63,7 +65,8 @@ Typical fields include:
 
 The basic operational flow of the system is shown below.
 
-![Operational Flow](../figures/FIG.3.png)
+<img width="1024" height="1536" alt="FIG3_operational_flow" src="https://github.com/user-attachments/assets/41dfd03d-20d0-459b-a64e-11c2a9548e59" />
+
 
 **FIG.3 — Operational Flow**
 
@@ -82,7 +85,8 @@ Request
 
 TriTrap supports parallel execution across multiple independent compute lanes.
 
-![Multi-Lane Execution](../figures/FIG.4.png)
+<img width="1024" height="1536" alt="FIG4_multilane_execution" src="https://github.com/user-attachments/assets/ceacf9ac-c0cf-4811-b840-88ca1acfaf7c" />
+
 
 **FIG.4 — Multi-Lane Execution**
 
@@ -95,7 +99,8 @@ Results are returned to a verification stage for comparison.
 
 Execution outcomes are validated through receipt comparison.
 
-![Receipt Verification](../figures/FIG.5.png)
+<img width="1024" height="1536" alt="FIG5_receipt_verification" src="https://github.com/user-attachments/assets/e07aff47-c36d-4da3-a4c5-bb843016178a" />
+
 
 **FIG.5 — Receipt Verification**
 
