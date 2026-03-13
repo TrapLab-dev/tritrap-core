@@ -8,6 +8,18 @@ The goal of the architecture is to improve reliability, governance, and reproduc
 
 ---
 
+## Architecture Overview
+
+The high-level architecture of TriTrap is illustrated below.
+
+![TriTrap Architecture](../figures/FIG.1.png)
+
+**FIG.1 — TriTrap System Architecture**
+
+The Gate coordinates controlled execution across independent execution lanes and routes results into a verification layer.
+
+---
+
 ## Research Focus
 
 • deterministic execution paths  
@@ -19,59 +31,78 @@ The goal of the architecture is to improve reliability, governance, and reproduc
 
 ## Core Concepts
 
-TriTrap explores a model where inference execution is governed by explicit authorization artifacts called **permits**.  
+TriTrap explores a model where inference execution is governed by explicit authorization artifacts called **permits**.
+
 Execution requests are validated by a **Gate node**, dispatched to independent **execution lanes**, and validated through **receipt verification**.
 
 The architecture is designed to enable deterministic and auditable execution flows.
 
 ---
 
-## System Components
+## Permit Structure
 
-**Gate Node**
+Permits represent authorization for a specific execution request.
 
-The gate node acts as the control authority responsible for:
+![Permit Structure](../figures/FIG.2.png)
 
-- verifying execution permits
-- dispatching execution requests
-- coordinating verification procedures
+**FIG.2 — Permit Structure**
 
----
+A permit contains metadata used by the Gate to validate execution authority.
 
-**Execution Lanes**
+Typical fields include:
 
-Execution lanes perform inference workloads.  
-Multiple lanes may execute the same task in parallel to allow validation of computation results.
-
----
-
-**Permit System**
-
-Permits define authorization for execution.
-
-A permit may contain:
-
-- permit identifier
-- scope hash
-- time-to-live
-- key identifier
-- integrity code
+- Permit ID  
+- Scope Hash  
+- Time-To-Live (TTL)  
+- Key Identifier  
+- Integrity Code  
 
 ---
 
-**Receipt Generation**
+## Operational Flow
 
-Execution lanes produce receipts containing metadata describing execution results.
+The basic operational flow of the system is shown below.
 
-Receipts allow validation of execution integrity.
+![Operational Flow](../figures/FIG.3.png)
+
+**FIG.3 — Operational Flow**
+
+Execution proceeds through the following stages:
+
+Request  
+→ Gate validation  
+→ Permit generation  
+→ Lane execution  
+→ Receipt creation  
+→ Verification
 
 ---
 
-**Verification and Arbitration**
+## Multi-Lane Execution
 
-Receipts produced by multiple lanes are compared.
+TriTrap supports parallel execution across multiple independent compute lanes.
 
-The verification process determines whether the execution results are accepted or rejected.
+![Multi-Lane Execution](../figures/FIG.4.png)
+
+**FIG.4 — Multi-Lane Execution**
+
+The Gate dispatches workloads to multiple execution lanes where inference tasks are performed concurrently.  
+Results are returned to a verification stage for comparison.
+
+---
+
+## Receipt Verification
+
+Execution outcomes are validated through receipt comparison.
+
+![Receipt Verification](../figures/FIG.5.png)
+
+**FIG.5 — Receipt Verification**
+
+Receipts produced by multiple lanes are compared by the verification layer.
+
+If outputs match within defined criteria the result is accepted.  
+If outputs diverge the system may reject the result or trigger arbitration.
 
 ---
 
