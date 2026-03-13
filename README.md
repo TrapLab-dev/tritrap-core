@@ -46,25 +46,13 @@ The system is built around four primary roles:
 
 ## Repository Structure
 tritrap-core
-│
 ├─ architecture
-│ ├ gate.md
-│ └ system_model.md
-│
-├─ docs
-│ └ overview.md
-│
 ├─ protocol
-│
+├─ docs
 ├─ figures
-│ ├ FIG.1.png
-│ ├ FIG.2.png
-│ ├ FIG.3.png
-│ ├ FIG.4.png
-│ └ FIG.5.png
-│
-└ README.md
-
+├─ examples
+├─ reference
+└─ README.md
 ---
 
 ## Status
