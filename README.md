@@ -15,6 +15,18 @@ The framework introduces mechanisms for:
 FIG.1 illustrates the high-level execution model of the TriTrap architecture, where a Gate node authorizes and dispatches workloads to independent execution lanes whose outputs are validated through a verification layer.
 
 ---
+## Design Principles
+
+TriTrap is built around several architectural principles:
+
+• **Deny-by-default execution** — workloads require explicit authorization before execution.
+
+• **Lane independence** — execution lanes operate independently to allow comparative validation.
+
+• **Deterministic verification** — outputs are validated through reproducible verification mechanisms.
+
+• **Separation of authorization and execution** — Gate nodes authorize workloads but do not perform inference.
+---
 ## Core Concepts
 
 TriTrap introduces a model where inference execution must be explicitly authorized and verified.
