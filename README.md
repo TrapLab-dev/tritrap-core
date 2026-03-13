@@ -43,17 +43,29 @@ The system is built around four primary roles:
 6. Verification / arbitration
 
 ---
-
 ## Repository Structure
-tritrap-core
-├─ architecture
-├─ protocol
-├─ docs
-├─ figures
-├─ examples
-├─ reference
+
+```
+tritrap-core/
+│
+├─ architecture/
+│  ├─ gate.md
+│  └─ system_model.md
+│
+├─ docs/
+│  └─ overview.md
+│
+├─ protocol/
+│
+├─ figures/
+│  ├─ FIG1_architecture.png
+│  ├─ FIG2_permit_structure.png
+│  ├─ FIG3_operational_flow.png
+│  ├─ FIG4_multilane_execution.png
+│  └─ FIG5_receipt_verification.png
+│
 └─ README.md
----
+```
 
 ## Status
 
