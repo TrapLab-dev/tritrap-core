@@ -2,21 +2,45 @@
 
 Core research and architecture documentation for the TriTrap execution framework.
 
-TriTrap is a research project exploring deterministic execution architectures for artificial intelligence systems.
+---
 
-This repository contains early architectural documentation and research notes related to the TriTrap execution framework.
+## Architecture
+
+![TriTrap Architecture](figures/FIG.1.png)
+
+TriTrap is a governed execution architecture for deterministic artificial intelligence inference workloads.
+
+The framework explores mechanisms for:
+
+• permit-based execution authorization  
+• controlled inference environments  
+• multi-lane execution validation  
+• deterministic verification of computation outcomes
 
 ---
 
-## Status
+## Core Concepts
 
-Architecture research phase.
+TriTrap introduces a model where inference execution must be explicitly authorized and verified.
+
+The system is built around four primary roles:
+
+• Gate  
+• Execution Lanes  
+• Permit System  
+• Verification Layer
+
+---
+
+## Execution Model
+
+1. Request arrives
+2. Permit validated
+3. Gate dispatches workload
+4. Execution lanes perform inference
+5. Receipts generated
+6. Verification / arbitration
 
 ---
 
 ## Repository Structure
-
-docs/        — architecture documentation  
-protocol/    — conceptual protocol descriptions  
-architecture/— system component design  
-figures/     — architecture diagrams
