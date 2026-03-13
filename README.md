@@ -16,15 +16,10 @@ FIG.1 illustrates the high-level execution model of the TriTrap architecture, wh
 
 ---
 ## Design Principles
-
 TriTrap is built around several architectural principles:
-
 • **Deny-by-default execution** — workloads require explicit authorization before execution.
-
 • **Lane independence** — execution lanes operate independently to allow comparative validation.
-
 • **Deterministic verification** — outputs are validated through reproducible verification mechanisms.
-
 • **Separation of authorization and execution** — Gate nodes authorize workloads but do not perform inference.
 ---
 ## Core Concepts
