@@ -1,0 +1,53 @@
+# Lane Execution Protocol
+
+Execution lanes perform the actual inference workload within the TriTrap architecture.
+
+Lanes operate independently and do not communicate with each other during execution.
+
+This independence allows comparative validation and deterministic verification.
+
+---
+
+## Responsibilities
+
+Execution lanes must:
+
+• validate incoming permits  
+• execute the authorized workload  
+• generate execution receipts  
+• return receipts to the verification layer  
+
+---
+
+## Execution Flow
+
+Upon receiving a workload:
+
+1. Validate permit signature
+2. Confirm permit scope and expiration
+3. Confirm workload hash
+4. Execute workload
+5. Generate output hash
+6. Create execution receipt
+7. Submit receipt to verification layer
+
+---
+
+## Lane Independence
+
+Lanes must not influence each other's execution results.
+
+Each lane produces an independent execution outcome.
+
+This ensures that verification can detect divergence between results.
+
+---
+
+## Failure Handling
+
+If a lane cannot complete execution:
+
+• an error receipt must be generated  
+• verification layer must be informed  
+
+Failure reporting ensures the system can perform arbitration correctly.
