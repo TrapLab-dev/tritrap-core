@@ -59,10 +59,16 @@ tritrap-core/
 │  ├─ gate.md
 │  └─ system_model.md
 │
-├─ docs/
-│  └─ overview.md
-│
 ├─ protocol/
+│  ├─ permit.md
+│  ├─ receipt.md
+│  ├─ gate_protocol.md
+│  ├─ lane_execution.md
+│  └─ arbitration.md
+│
+├─ docs/
+│  ├─ overview.md
+│  └─ terminology.md
 │
 ├─ figures/
 │  ├─ FIG1_architecture.png
