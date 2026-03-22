@@ -3,6 +3,7 @@
 ## Overview
 
 TriTrap is a governed execution architecture designed to control and verify artificial intelligence inference workloads.
+This system model is an architecture and protocol description, not the sole evidence base for current live runtime claims.
 
 The system introduces a deterministic execution model where all inference operations must pass through an authorization and verification process.
 
@@ -138,4 +139,4 @@ Request
 
 ## Research Status
 
-Conceptual architecture research phase.
+Invention/protocol architecture model.

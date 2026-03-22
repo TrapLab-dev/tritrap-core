@@ -1,5 +1,7 @@
 # TriTrap
 TriTrap is a governed execution architecture for deterministic artificial intelligence inference workloads.
+This repository is the invention/protocol/public architecture layer for TriTrap.
+It is not the sole proof source for the current canonical live runtime, which must be grounded in canonical node docs, live service/source records, and dated execution evidence outside this repository.
 The framework introduces mechanisms for:
 
 • permit-based execution authorization  
@@ -82,4 +84,4 @@ tritrap-core/
 
 ## Status
 
-Conceptual architecture research phase.
+Invention/protocol architecture repository.

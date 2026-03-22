@@ -1,6 +1,7 @@
 # TriTrap Terminology
 
 This document defines the core terms used throughout the TriTrap architecture.
+It standardizes architecture and protocol language, but does not by itself prove the current canonical live runtime state.
 
 Establishing consistent terminology ensures that protocol specifications, architecture documentation, and implementation discussions remain precise.
 

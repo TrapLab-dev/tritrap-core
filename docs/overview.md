@@ -1,6 +1,8 @@
 # TriTrap Architecture Overview
 
 TriTrap is an experimental architecture for deterministic execution of artificial intelligence inference workloads.
+This document describes the invention/protocol architecture layer.
+It does not, by itself, prove the current canonical live runtime state.
 
 The design explores mechanisms for controlled execution environments, multi-path execution validation, and verifiable computation outcomes.
 
@@ -113,4 +115,4 @@ If outputs diverge the system may reject the result or trigger arbitration.
 
 ## Status
 
-Conceptual architecture research phase.
+Invention/protocol architecture document, not a standalone live-runtime proof record.

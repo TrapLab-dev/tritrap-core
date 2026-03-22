@@ -1,6 +1,8 @@
 # Gate Component
 
 The Gate represents the coordination and control entry point for the TriTrap execution environment.
+This document describes the Gate at the architecture layer.
+It is not, by itself, a source record for the current canonical live runtime.
 
 It receives execution requests and determines how workloads are directed into the TriTrap system.
 
@@ -21,4 +23,4 @@ This architectural separation allows execution paths to remain independent while
 
 ## Status
 
-Conceptual design phase.
+Invention/protocol architecture document.
