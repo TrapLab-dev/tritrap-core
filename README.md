@@ -55,11 +55,14 @@ Current public runtime documentation:
 - [Runtime Maturity Matrix](docs/runtime_maturity_matrix.md) - public-safe maturity summary
 - [Public Audit Checklist](docs/public_audit_checklist.md) - publication review checklist
 - [Execution Modes](docs/execution_modes.md) - latency, assurance, and evidence tradeoffs
+- [Controlled Validation Backbone](docs/controlled_validation_backbone.md) - public-safe validation cases and evidence classes
 - [Proof Slice Example](docs/proof_slice_example.md) - synthetic governed-run example
 - [Claim Boundary](docs/claim_boundary.md) - public claims, non-claims, and withheld material
+- [Claim-to-Evidence Matrix](docs/claim_to_evidence_matrix.md) - mapping claims to evidence classes
 - [Limitations](docs/limitations.md) - known limits and failure conditions
 - [Threat Model](docs/threat_model.md) - public threat posture
 - [Technical Due Diligence](docs/technical_due_diligence.md) - reviewer shortcut
+- [Diligence Bridge](docs/diligence_bridge.md) - controlled review without public replication
 - [One Page Brief](docs/one_page_brief.md) - fast, public-safe summary
 - [Use Cases](docs/use_cases.md) - grounded application areas
 - [Partner Overview](docs/partner_overview.md) - integration and evaluation framing
@@ -104,11 +107,14 @@ tritrap-core/
 │  ├─ runtime_maturity_matrix.md
 │  ├─ public_audit_checklist.md
 │  ├─ execution_modes.md
+│  ├─ controlled_validation_backbone.md
 │  ├─ proof_slice_example.md
 │  ├─ claim_boundary.md
+│  ├─ claim_to_evidence_matrix.md
 │  ├─ limitations.md
 │  ├─ threat_model.md
 │  ├─ technical_due_diligence.md
+│  ├─ diligence_bridge.md
 │  ├─ one_page_brief.md
 │  ├─ use_cases.md
 │  ├─ partner_overview.md

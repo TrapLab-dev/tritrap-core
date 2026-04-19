@@ -27,6 +27,8 @@ The public repository establishes:
 - public evidence model
 - disclosure boundary
 - synthetic proof slice showing expected behavior
+- claim-to-evidence classes for public, private, withheld, and planned material
+- controlled validation case requirements without publishing private artifacts
 
 ---
 
@@ -43,6 +45,7 @@ The following are intentionally outside the public repo:
 - key material
 - deployment commands
 - operational timing and audit outputs
+- private validation harnesses and raw controlled-review artifacts
 
 Withholding these details is part of the public security posture.
 
@@ -56,7 +59,7 @@ The public repo does not claim:
 - to prove every live runtime detail by itself
 - that every lane is hardware-backed
 - that all deployments have identical evidence storage
-- that multi-lane execution guarantees correctness
+- that multi-lane execution proves universal correctness
 - that private evidence has been published
 - that every planned hardening item is complete
 
@@ -77,13 +80,16 @@ The default public arbitration behavior is `reject_on_divergence` unless the per
 Recommended review order:
 
 1. [Claim Boundary](claim_boundary.md)
-2. [Limitations](limitations.md)
-3. [Threat Model](threat_model.md)
-4. [Arbitration Protocol](../protocol/arbitration.md)
-5. [Execution Modes](execution_modes.md)
-6. [Proof Slice Example](proof_slice_example.md)
-7. [Runtime Maturity Matrix](runtime_maturity_matrix.md)
-8. [Non-Disclosure Boundary](non_disclosure_boundary.md)
+2. [Claim-to-Evidence Matrix](claim_to_evidence_matrix.md)
+3. [Controlled Validation Backbone](controlled_validation_backbone.md)
+4. [Limitations](limitations.md)
+5. [Threat Model](threat_model.md)
+6. [Arbitration Protocol](../protocol/arbitration.md)
+7. [Execution Modes](execution_modes.md)
+8. [Proof Slice Example](proof_slice_example.md)
+9. [Runtime Maturity Matrix](runtime_maturity_matrix.md)
+10. [Diligence Bridge](diligence_bridge.md)
+11. [Non-Disclosure Boundary](non_disclosure_boundary.md)
 
 ---
 
@@ -96,6 +102,8 @@ A reviewer should be able to answer:
 - What is public?
 - What is withheld?
 - What is staged or planned?
+- Which evidence class supports each claim?
+- Which validation cases prove refusal rather than acceptance?
 - What happens when lanes disagree?
 - What happens when evidence is incomplete?
 - What risks remain?

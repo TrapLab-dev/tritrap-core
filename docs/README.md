@@ -38,6 +38,7 @@ The public repo is intended to be reviewable without exposing private deployment
 - [Current Runtime Status](current_runtime_status.md) - public maturity labels and runtime posture
 - [Evidence Model](evidence_model.md) - evidence package concepts and fail-closed validation
 - [Execution Modes](execution_modes.md) - speed, assurance, and audit tradeoffs
+- [Controlled Validation Backbone](controlled_validation_backbone.md) - public-safe validation cases and evidence classes
 - [Proof Slice Example](proof_slice_example.md) - synthetic governed-run example
 - [Runtime Maturity Matrix](runtime_maturity_matrix.md) - public-safe maturity summary
 
@@ -48,9 +49,11 @@ The public repo is intended to be reviewable without exposing private deployment
 - [Non-Disclosure Boundary](non_disclosure_boundary.md) - public/private disclosure split
 - [Public Audit Checklist](public_audit_checklist.md) - publication review checklist
 - [Claim Boundary](claim_boundary.md) - claims, non-claims, withheld, and not implemented
+- [Claim-to-Evidence Matrix](claim_to_evidence_matrix.md) - claim mapping to public, private, withheld, and planned evidence
 - [Limitations](limitations.md) - known limits and failure modes
 - [Threat Model](threat_model.md) - public threat posture
 - [Technical Due Diligence](technical_due_diligence.md) - reviewer shortcut
+- [Diligence Bridge](diligence_bridge.md) - controlled review without public replication
 - [Security Policy](../SECURITY.md) - responsible disclosure and repository scope
 
 ---
