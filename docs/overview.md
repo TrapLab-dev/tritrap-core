@@ -23,6 +23,8 @@ Public runtime documents:
 - [Non-Disclosure Boundary](non_disclosure_boundary.md)
 - [Runtime Maturity Matrix](runtime_maturity_matrix.md)
 - [Public Audit Checklist](public_audit_checklist.md)
+- [Execution Modes](execution_modes.md)
+- [Proof Slice Example](proof_slice_example.md)
 
 ---
 

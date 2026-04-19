@@ -53,6 +53,8 @@ Current public runtime documentation:
 - [Non-Disclosure Boundary](docs/non_disclosure_boundary.md) - what the public repo may disclose and what remains private
 - [Runtime Maturity Matrix](docs/runtime_maturity_matrix.md) - public-safe maturity summary
 - [Public Audit Checklist](docs/public_audit_checklist.md) - publication review checklist
+- [Execution Modes](docs/execution_modes.md) - latency, assurance, and evidence tradeoffs
+- [Proof Slice Example](docs/proof_slice_example.md) - synthetic governed-run example
 - [Security Policy](SECURITY.md) - responsible disclosure and repository scope
 
 ---
@@ -90,7 +92,9 @@ tritrap-core/
 │  ├─ evidence_model.md
 │  ├─ non_disclosure_boundary.md
 │  ├─ runtime_maturity_matrix.md
-│  └─ public_audit_checklist.md
+│  ├─ public_audit_checklist.md
+│  ├─ execution_modes.md
+│  └─ proof_slice_example.md
 │
 ├─ figures/
 │  ├─ FIG1_architecture.png
