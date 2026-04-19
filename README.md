@@ -13,7 +13,7 @@ The framework introduces mechanisms for:
 
 ## Architecture
 
-<img width="1024" height="1536" alt="FIG1_architecture" src="https://github.com/user-attachments/assets/c80c29a5-c214-40ff-ab7a-b54efdfeee55" /> 
+<img width="1024" height="1536" alt="FIG1_architecture" src="figures/FIG1_architecture.png" />
 FIG.1 illustrates the high-level execution model of the TriTrap architecture, where a Gate node authorizes and dispatches workloads to independent execution lanes whose outputs are validated through a verification layer.
 
 ---
@@ -48,6 +48,7 @@ TriTrap's public repository documents architecture, protocol concepts, and runti
 
 Current public runtime documentation:
 
+- [Documentation Index](docs/README.md) - reviewer navigation
 - [Current Runtime Status](docs/current_runtime_status.md) - public maturity labels and runtime posture
 - [Evidence Model](docs/evidence_model.md) - proof package concepts, hash-chain evidence, and fail-closed validation
 - [Non-Disclosure Boundary](docs/non_disclosure_boundary.md) - what the public repo may disclose and what remains private
@@ -94,6 +95,7 @@ tritrap-core/
 │  └─ arbitration.md
 │
 ├─ docs/
+│  ├─ README.md
 │  ├─ overview.md
 │  ├─ terminology.md
 │  ├─ current_runtime_status.md

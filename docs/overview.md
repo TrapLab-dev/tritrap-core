@@ -18,6 +18,7 @@ The public repository describes protocol concepts, runtime posture, evidence han
 
 Public runtime documents:
 
+- [Documentation Index](README.md)
 - [Current Runtime Status](current_runtime_status.md)
 - [Evidence Model](evidence_model.md)
 - [Non-Disclosure Boundary](non_disclosure_boundary.md)
@@ -40,7 +41,7 @@ Public runtime documents:
 
 The high-level architecture of TriTrap is illustrated below.
 
-<img width="1024" height="1536" alt="FIG1_architecture" src="https://github.com/user-attachments/assets/c7933d63-48ed-4ff0-a1ca-ebefa44c95c6" />
+<img width="1024" height="1536" alt="FIG1_architecture" src="../figures/FIG1_architecture.png" />
 
 
 **FIG.1 — TriTrap System Architecture**
@@ -72,7 +73,7 @@ The architecture is designed to enable deterministic and auditable execution flo
 
 Permits represent authorization for a specific execution request.
 
-<img width="1024" height="1536" alt="FIG2_permit_structure" src="https://github.com/user-attachments/assets/33a25613-5403-4c07-93b1-bd8809df6705" />
+<img width="1024" height="1536" alt="FIG2_permit_structure" src="../figures/FIG2_permit_structure.png" />
 
 
 **FIG.2 — Permit Structure**
@@ -93,7 +94,7 @@ Typical fields include:
 
 The basic operational flow of the system is shown below.
 
-<img width="1024" height="1536" alt="FIG3_operational_flow" src="https://github.com/user-attachments/assets/41dfd03d-20d0-459b-a64e-11c2a9548e59" />
+<img width="1024" height="1536" alt="FIG3_operational_flow" src="../figures/FIG3_operational_flow.png" />
 
 
 **FIG.3 — Operational Flow**
@@ -113,7 +114,7 @@ Request
 
 TriTrap supports parallel execution across multiple independent compute lanes.
 
-<img width="1024" height="1536" alt="FIG4_multilane_execution" src="https://github.com/user-attachments/assets/ceacf9ac-c0cf-4811-b840-88ca1acfaf7c" />
+<img width="1024" height="1536" alt="FIG4_multilane_execution" src="../figures/FIG4_multilane_execution.png" />
 
 
 **FIG.4 — Multi-Lane Execution**
@@ -127,7 +128,7 @@ Results are returned to a verification stage for comparison.
 
 Execution outcomes are validated through receipt comparison.
 
-<img width="1024" height="1536" alt="FIG5_receipt_verification" src="https://github.com/user-attachments/assets/e07aff47-c36d-4da3-a4c5-bb843016178a" />
+<img width="1024" height="1536" alt="FIG5_receipt_verification" src="../figures/FIG5_receipt_verification.png" />
 
 
 **FIG.5 — Receipt Verification**

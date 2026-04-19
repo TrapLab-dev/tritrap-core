@@ -77,7 +77,7 @@ Execution occurs within independent lanes, allowing results to be validated thro
 
 The architecture separates authorization, execution, and verification responsibilities into distinct system layers.
 
-This separation allows inference pipelines to operate with stronger guarantees regarding execution control and result verification.
+This separation allows inference pipelines to operate with stronger assurance regarding execution control and result verification.
 
 ---
 
@@ -85,11 +85,11 @@ This separation allows inference pipelines to operate with stronger guarantees r
 
 The TriTrap project focuses on defining the architectural and protocol foundations for such a system.
 
+This document frames the original architectural problem. Current public runtime maturity, evidence posture, and disclosure boundaries are documented separately in the runtime and trust-layer documentation.
+
 The repository documents:
 
 • system architecture  
 • execution protocols  
 • authorization artifacts  
 • verification mechanisms  
-
-Future work may explore practical implementations and experimental validation of these concepts.
