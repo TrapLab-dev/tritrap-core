@@ -55,6 +55,10 @@ Current public runtime documentation:
 - [Public Audit Checklist](docs/public_audit_checklist.md) - publication review checklist
 - [Execution Modes](docs/execution_modes.md) - latency, assurance, and evidence tradeoffs
 - [Proof Slice Example](docs/proof_slice_example.md) - synthetic governed-run example
+- [Claim Boundary](docs/claim_boundary.md) - public claims, non-claims, and withheld material
+- [Limitations](docs/limitations.md) - known limits and failure conditions
+- [Threat Model](docs/threat_model.md) - public threat posture
+- [Technical Due Diligence](docs/technical_due_diligence.md) - reviewer shortcut
 - [Security Policy](SECURITY.md) - responsible disclosure and repository scope
 
 ---
@@ -94,7 +98,11 @@ tritrap-core/
 │  ├─ runtime_maturity_matrix.md
 │  ├─ public_audit_checklist.md
 │  ├─ execution_modes.md
-│  └─ proof_slice_example.md
+│  ├─ proof_slice_example.md
+│  ├─ claim_boundary.md
+│  ├─ limitations.md
+│  ├─ threat_model.md
+│  └─ technical_due_diligence.md
 │
 ├─ figures/
 │  ├─ FIG1_architecture.png

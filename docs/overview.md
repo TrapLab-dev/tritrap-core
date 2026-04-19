@@ -25,6 +25,10 @@ Public runtime documents:
 - [Public Audit Checklist](public_audit_checklist.md)
 - [Execution Modes](execution_modes.md)
 - [Proof Slice Example](proof_slice_example.md)
+- [Claim Boundary](claim_boundary.md)
+- [Limitations](limitations.md)
+- [Threat Model](threat_model.md)
+- [Technical Due Diligence](technical_due_diligence.md)
 
 ---
 
