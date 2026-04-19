@@ -1,2 +1,5 @@
 # Private operator/runtime review notes are not public repo material.
 docs/CURRENT_RUNTIME_ALIGNMENT_REVIEW_2026-03-21.md
+
+# Private controlled-validation artifacts stay behind the public review repo.
+operator/controlled_validation/
