@@ -45,4 +45,4 @@ After arbitration completes:
 
 • accepted output is returned to the client
 • verification result may be recorded
-• receipts may be archived for auditing
+• receipts may be archived for auditing where the deployment implements durable receipt archival

@@ -6,6 +6,11 @@ Receipts serve as proof that execution occurred and provide the data required fo
 
 Each lane independently produces a receipt describing the execution outcome.
 
+Implementation note: this protocol defines the architecture-level receipt contract.
+Current deployments may implement a narrower receipt shape or return receipts through
+lane responses instead of durable local storage, provided permit binding, lane
+identity, output integrity, and verification semantics are preserved.
+
 ---
 
 ## Receipt Structure

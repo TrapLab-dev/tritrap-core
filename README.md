@@ -42,6 +42,18 @@ The system is built around four primary roles:
 
 ---
 
+## Public Runtime Posture
+
+TriTrap's public repository documents architecture, protocol concepts, and runtime maturity posture without publishing private deployment mechanics.
+
+Current public runtime documentation:
+
+• [Current Runtime Status](docs/current_runtime_status.md) — public maturity labels and runtime posture
+• [Evidence Model](docs/evidence_model.md) — proof package concepts, hash-chain evidence, and fail-closed validation
+• [Non-Disclosure Boundary](docs/non_disclosure_boundary.md) — what the public repo may disclose and what remains private
+
+---
+
 ## Execution Model
 
 1. Request arrives
@@ -70,7 +82,10 @@ tritrap-core/
 │
 ├─ docs/
 │  ├─ overview.md
-│  └─ terminology.md
+│  ├─ terminology.md
+│  ├─ current_runtime_status.md
+│  ├─ evidence_model.md
+│  └─ non_disclosure_boundary.md
 │
 ├─ figures/
 │  ├─ FIG1_architecture.png

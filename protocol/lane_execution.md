@@ -6,6 +6,11 @@ Lanes operate independently and do not communicate with each other during execut
 
 This independence allows comparative validation and deterministic verification.
 
+Deployment note: lane execution may range from a reference or placeholder lane to
+hardware-backed inference depending on deployment stage. This protocol describes
+required lane behavior; it is not, by itself, proof that a specific live lane is
+currently hardware-backed.
+
 ---
 
 ## Responsibilities
