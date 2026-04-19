@@ -10,6 +10,22 @@ The goal of the architecture is to improve reliability, governance, and reproduc
 
 ---
 
+## Public Runtime Maturity
+
+TriTrap separates public architecture documentation from private operational evidence.
+
+The public repository describes protocol concepts, runtime posture, evidence handling, and disclosure boundaries. Private deployment mechanics, proof archives, verifier internals, topology, runtime paths, keys, and operational commands remain outside this repository.
+
+Public runtime documents:
+
+- [Current Runtime Status](current_runtime_status.md)
+- [Evidence Model](evidence_model.md)
+- [Non-Disclosure Boundary](non_disclosure_boundary.md)
+- [Runtime Maturity Matrix](runtime_maturity_matrix.md)
+- [Public Audit Checklist](public_audit_checklist.md)
+
+---
+
 ## Architecture Overview
 
 The high-level architecture of TriTrap is illustrated below.

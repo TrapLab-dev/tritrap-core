@@ -48,9 +48,12 @@ TriTrap's public repository documents architecture, protocol concepts, and runti
 
 Current public runtime documentation:
 
-• [Current Runtime Status](docs/current_runtime_status.md) — public maturity labels and runtime posture
-• [Evidence Model](docs/evidence_model.md) — proof package concepts, hash-chain evidence, and fail-closed validation
-• [Non-Disclosure Boundary](docs/non_disclosure_boundary.md) — what the public repo may disclose and what remains private
+- [Current Runtime Status](docs/current_runtime_status.md) - public maturity labels and runtime posture
+- [Evidence Model](docs/evidence_model.md) - proof package concepts, hash-chain evidence, and fail-closed validation
+- [Non-Disclosure Boundary](docs/non_disclosure_boundary.md) - what the public repo may disclose and what remains private
+- [Runtime Maturity Matrix](docs/runtime_maturity_matrix.md) - public-safe maturity summary
+- [Public Audit Checklist](docs/public_audit_checklist.md) - publication review checklist
+- [Security Policy](SECURITY.md) - responsible disclosure and repository scope
 
 ---
 
@@ -85,7 +88,9 @@ tritrap-core/
 │  ├─ terminology.md
 │  ├─ current_runtime_status.md
 │  ├─ evidence_model.md
-│  └─ non_disclosure_boundary.md
+│  ├─ non_disclosure_boundary.md
+│  ├─ runtime_maturity_matrix.md
+│  └─ public_audit_checklist.md
 │
 ├─ figures/
 │  ├─ FIG1_architecture.png
@@ -94,6 +99,7 @@ tritrap-core/
 │  ├─ FIG4_multilane_execution.png
 │  └─ FIG5_receipt_verification.png
 │
+├─ SECURITY.md
 └─ README.md
 ```
 
