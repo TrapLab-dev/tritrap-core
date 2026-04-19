@@ -92,4 +92,3 @@ TriTrap is a governed edge-runtime architecture for controlled dispatch, lane ex
 The public repository shows the architecture, protocol posture, and maturity model.
 
 The private system records hold deployment mechanics and dated proof.
-

@@ -73,4 +73,3 @@ This repository must not be read as publishing:
 - deployment mechanics
 
 TriTrap's public posture is maturity without replicability.
-

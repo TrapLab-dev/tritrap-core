@@ -83,4 +83,3 @@ Withheld private details:
 - node addresses
 - verifier source internals
 - retention mechanics
-
