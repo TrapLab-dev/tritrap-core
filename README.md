@@ -59,6 +59,10 @@ Current public runtime documentation:
 - [Limitations](docs/limitations.md) - known limits and failure conditions
 - [Threat Model](docs/threat_model.md) - public threat posture
 - [Technical Due Diligence](docs/technical_due_diligence.md) - reviewer shortcut
+- [One Page Brief](docs/one_page_brief.md) - fast, public-safe summary
+- [Use Cases](docs/use_cases.md) - grounded application areas
+- [Partner Overview](docs/partner_overview.md) - integration and evaluation framing
+- [Design Philosophy](docs/design_philosophy.md) - sober engineering principles
 - [Security Policy](SECURITY.md) - responsible disclosure and repository scope
 
 ---
@@ -102,7 +106,11 @@ tritrap-core/
 │  ├─ claim_boundary.md
 │  ├─ limitations.md
 │  ├─ threat_model.md
-│  └─ technical_due_diligence.md
+│  ├─ technical_due_diligence.md
+│  ├─ one_page_brief.md
+│  ├─ use_cases.md
+│  ├─ partner_overview.md
+│  └─ design_philosophy.md
 │
 ├─ figures/
 │  ├─ FIG1_architecture.png
