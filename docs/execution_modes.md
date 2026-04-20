@@ -1,6 +1,6 @@
 # Execution Modes
 
-TriTrap supports different execution postures for different trust, cost, and latency requirements.
+TriTrap defines different execution postures for different trust, cost, and latency requirements.
 
 This document describes public execution modes. It does not publish private deployment topology, live service configuration, verifier internals, runtime paths, keys, or operational commands.
 
@@ -10,7 +10,7 @@ This document describes public execution modes. It does not publish private depl
 
 | Mode | Lane posture | Verification posture | Typical use |
 | --- | --- | --- | --- |
-| fast | Single lane | Minimal receipt validation | Low-latency work where speed matters most. |
+| fast (conceptual) | Single lane | Minimal receipt validation | Low-latency work where speed matters most. |
 | verified | Two or more lanes | Output comparison required | Workloads that require stronger assurance. |
 | critical | Multiple required lanes | Strict arbitration and fail-closed behavior | High-consequence workloads. |
 | audit | Configurable lanes | Extended evidence capture where implemented | Review, demonstration, or controlled audit runs. |
@@ -18,6 +18,8 @@ This document describes public execution modes. It does not publish private depl
 ---
 
 ## Fast Mode
+Fast mode is a conceptual posture. The public repository does not claim fast mode is implemented or publicly proven for the current canonical runtime.
+
 
 Fast mode favors latency.
 
@@ -65,7 +67,7 @@ TriTrap does not treat every workload as having the same assurance requirement.
 
 Execution mode selection is a policy decision:
 
-- fast mode reduces latency and comparative assurance
+- fast mode (conceptual) reduces latency and comparative assurance
 - verified mode increases assurance and compute cost
 - critical mode prioritizes strict rejection on unresolved divergence
 - audit mode prioritizes reviewable evidence boundaries

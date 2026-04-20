@@ -12,7 +12,7 @@ It is designed to prevent claim drift. It does not publish private deployment me
 | --- | --- | --- |
 | PUBLIC_ARCHITECTURE | Architecture or protocol behavior described in this repository. | Public. |
 | PUBLIC_SYNTHETIC | Synthetic example that demonstrates shape or expected behavior. | Public, but not live evidence. |
-| PRIVATE_CONTROLLED_EVIDENCE | Dated or bounded operator evidence available only through controlled review. | Withheld unless deliberately redacted. |
+| PRIVATE_CONTROLLED_EVIDENCE | Dated or bounded maintainer evidence available only through controlled review. | Withheld unless deliberately redacted. |
 | WITHHELD_OPERATIONAL | Real or relevant operational material that is not safe to publish. | Withheld. |
 | NOT_CLAIMED | A statement the public repo does not make. | Explicitly excluded. |
 | PLANNED | Identified future hardening or validation direction. | Public as future work only. |
@@ -29,11 +29,11 @@ It is designed to prevent claim drift. It does not publish private deployment me
 | Divergent lane outputs should not be silently accepted. | Default public arbitration posture is `reject_on_divergence`. | PUBLIC_ARCHITECTURE + PUBLIC_SYNTHETIC + PRIVATE_CONTROLLED_EVIDENCE | Arbitration review and negative-case validation | PROVEN | Public rule, private validation | No private arbitration traces. | Public repo does not expose every policy implementation. |
 | Invalid or incomplete evidence fails closed. | Missing, inconsistent, or unverifiable evidence is treated as invalid. | PUBLIC_ARCHITECTURE + PRIVATE_CONTROLLED_EVIDENCE | Negative-case validation | PROVEN | Public rule, private validation | No verifier internals or proof archives. | Public repo does not prove all deployment failure paths. |
 | Multi-lane execution increases comparative assurance. | Verified and critical modes can compare outputs across lanes. | PUBLIC_ARCHITECTURE | Mode and limitation review | PROVEN | Public | No hardware, model, or deployment details. | Agreement is not universal correctness. Shared failure modes remain. |
-| Lane independence is meaningful only when failure domains differ. | The public repo treats independence as a design requirement, not a universal guarantee. | PUBLIC_ARCHITECTURE + PLANNED | Failure-domain review | STAGED | Public posture, private testing when available | No lane stack disclosure. | Independence must be validated per deployment. |
+| Lane separation is meaningful only when failure domains differ. | The public repo treats separation as a design requirement, not a universal guarantee. | PUBLIC_ARCHITECTURE + PLANNED | Failure-domain review | STAGED | Public posture, private testing when available | No lane stack disclosure. | Separation must be validated per deployment. |
 | Runtime evidence exists outside the public repo. | The public repository is not the sole proof source. | WITHHELD_OPERATIONAL + PRIVATE_CONTROLLED_EVIDENCE | Controlled diligence review | WITHHELD | Controlled review only | No raw packages, hashes, paths, or commands. | Public confidence has a deliberate proof ceiling. |
 | Synthetic proof slice demonstrates behavior shape. | The proof slice is synthetic and does not claim to be live evidence. | PUBLIC_SYNTHETIC | Documentation example review | PROVEN | Public | No operational artifact disclosure. | It proves structure, not runtime enforcement. |
 | Public docs are not a deployment manual. | Operational mechanics remain withheld. | NOT_CLAIMED | Boundary review | PROVEN | Public | No service definitions or runbooks. | Some reviewers will require private diligence to assess implementation. |
-| Latency and cost differ by execution mode. | Fast, verified, critical, and audit modes trade latency for assurance. | PUBLIC_ARCHITECTURE + PLANNED | Mode review and measured-envelope review | STAGED | Public shape, private measurements | No raw benchmarks unless intentionally released. | Public docs do not publish deployment-specific timing. |
+| Latency and cost differ by execution mode. | Verified, critical, and audit modes trade latency for assurance. Fast mode is conceptual unless separately designated. | PUBLIC_ARCHITECTURE + PLANNED | Mode review and measured-envelope review | STAGED | Public shape, private measurements | No raw benchmarks unless intentionally released. | Public docs do not publish deployment-specific timing. |
 
 ---
 

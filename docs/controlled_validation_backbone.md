@@ -25,7 +25,7 @@ Negative validation shows that the system rejects invalid, stale, incomplete, di
 | Rejected divergence | Show that required lane disagreement does not silently become success. | Rejected under `reject_on_divergence`. | PRIVATE_CONTROLLED_EVIDENCE |
 | Rejected incomplete evidence | Show that missing required proof material invalidates the result. | Rejected. | PRIVATE_CONTROLLED_EVIDENCE |
 | Rejected stale or replayed material | Show that stale or replayed evidence is not treated as fresh authority. | Rejected. | PRIVATE_CONTROLLED_EVIDENCE |
-| Mode contrast | Show that fast, verified, critical, and audit modes trade latency, cost, and assurance. | Bounded comparison without private timing disclosure. | PRIVATE_CONTROLLED_EVIDENCE |
+| Mode contrast | Show that verified, critical, and audit modes trade latency, cost, and assurance (fast mode is conceptual unless separately designated). | Bounded comparison without private timing disclosure. | PRIVATE_CONTROLLED_EVIDENCE |
 
 ---
 

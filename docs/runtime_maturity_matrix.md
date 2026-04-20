@@ -10,7 +10,7 @@ It is intended for review and orientation. It does not publish private deploymen
 
 | Label | Meaning |
 | --- | --- |
-| PROVEN | Backed by dated evidence or verified operator records. |
+| PROVEN | Backed by dated evidence or verified maintainer records. |
 | STAGED | Present in a controlled workflow or hardening path, but not presented as complete public proof. |
 | WITHHELD | Real or relevant, but intentionally private. |
 | PLANNED | Identified future hardening direction. |
@@ -21,7 +21,7 @@ It is intended for review and orientation. It does not publish private deploymen
 
 | Area | Public status | Public claim | Private evidence class |
 | --- | --- | --- | --- |
-| Gate authorization | PROVEN | Execution is governed through an authorization role before dispatch. | Withheld dated evidence and operator records. |
+| Gate authorization | PROVEN | Execution is governed through an authorization role before dispatch. | Withheld dated evidence and maintainer records. |
 | Role separation | PROVEN | Gate, execution lane, and verification lane responsibilities are separated. | Withheld deployment records. |
 | Scoped dispatch | PROVEN | Workloads are dispatched under bounded authority concepts. | Withheld runtime evidence. |
 | Receipt concept | PROVEN | Lanes produce receipt-style evidence for verification and arbitration. | Withheld live receipt records. |
@@ -32,7 +32,7 @@ It is intended for review and orientation. It does not publish private deploymen
 | Status and audit visibility | STAGED | Runtime visibility is treated as a controlled operational requirement. | Withheld audit commands and outputs. |
 | Retention posture | STAGED | Evidence retention is governed as an operational control. | Withheld retention procedure and archive details. |
 | Hardware lane details | WITHHELD | Hardware and runtime specifics are not published in this repository. | Private deployment material. |
-| Verifier internals | WITHHELD | The public verifier contract is described; implementation details remain private. | Private verifier source and operator records. |
+| Verifier internals | WITHHELD | The public verifier contract is described; implementation details remain private. | Private verifier source and maintainer records. |
 | Public review process | PLANNED | Public documentation will continue to use conservative review gates. | Internal release review records. |
 
 ---

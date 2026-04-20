@@ -43,7 +43,7 @@ Instead, it governs which workloads are allowed to execute.
 
 Execution lanes perform the actual inference computation.
 
-Each lane may run on independent hardware or runtime environments.
+Each lane may run on separate hardware or runtime environments.
 
 Multiple lanes may execute the same workload simultaneously to allow comparison of outputs.
 

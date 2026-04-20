@@ -35,7 +35,7 @@ However, several factors can influence execution outcomes:
 • software inconsistencies  
 • transient execution faults  
 
-Most inference systems do not incorporate built-in mechanisms to validate results across independent execution environments.
+Most inference systems do not incorporate built-in mechanisms to validate results across separate execution environments.
 
 This makes it difficult to verify that an inference result is deterministic or trustworthy.
 
@@ -73,7 +73,7 @@ TriTrap explores an architectural model designed to address these challenges.
 
 The system introduces a permit-governed execution architecture where inference workloads must be explicitly authorized before execution.
 
-Execution occurs within independent lanes, allowing results to be validated through deterministic verification mechanisms.
+Execution occurs within separate lanes, allowing results to be validated through deterministic verification mechanisms.
 
 The architecture separates authorization, execution, and verification responsibilities into distinct system layers.
 

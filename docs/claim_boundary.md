@@ -44,7 +44,7 @@ These are boundaries, not retreats. They keep the public repo accurate.
 
 ## WITHHELD vs NOT IMPLEMENTED
 
-**WITHHELD** means a detail is intentionally not public because it belongs in private operator records, controlled evidence packages, or internal deployment material.
+**WITHHELD** means a detail is intentionally not public because it belongs in private maintainer records, controlled evidence packages, or internal deployment material.
 
 **NOT IMPLEMENTED** means a capability does not currently exist in the relevant implementation.
 

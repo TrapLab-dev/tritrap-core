@@ -1,6 +1,6 @@
 # One Page Brief
 
-TriTrap is a governed execution architecture for AI inference workflows that need controlled dispatch, independent verification, and fail-closed evidence handling.
+TriTrap is a governed execution architecture for AI inference workflows that need controlled dispatch, comparative verification, and fail-closed evidence handling.
 
 The problem TriTrap addresses is simple: many AI execution pipelines are trusted by default, even when the work is high consequence, hard to audit, or difficult to reproduce.
 
@@ -46,7 +46,7 @@ It defines:
 
 - deny-by-default execution
 - permit-scoped dispatch
-- independent lane roles
+- separated lane roles
 - receipt-style evidence
 - deterministic arbitration policies
 - public fail-closed defaults

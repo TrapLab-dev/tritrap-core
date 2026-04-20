@@ -112,7 +112,7 @@ Request
 
 ## Multi-Lane Execution
 
-TriTrap supports parallel execution across multiple independent compute lanes.
+TriTrap supports parallel execution across multiple separate compute lanes.
 
 <img width="1024" height="1536" alt="FIG4_multilane_execution" src="../figures/FIG4_multilane_execution.png" />
 

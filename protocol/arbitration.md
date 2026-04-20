@@ -64,7 +64,7 @@ Public protocol examples include:
 | strict_match | Accept only if all required lane outputs match exactly. |
 | majority_accept | Accept the majority result only when the permit explicitly allows majority resolution. |
 | weighted_lane | Prefer a designated lane only when the permit explicitly defines lane weighting. |
-| manual_review | Hold the result for operator or reviewer action. |
+| manual_review | Hold the result for maintainer or reviewer action. |
 
 The public repository describes policy semantics, not private verifier implementation.
 

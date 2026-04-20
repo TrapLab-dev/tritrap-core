@@ -18,7 +18,7 @@ Default fallback: `reject_on_divergence`
 
 Workload: synthetic prompt classification
 
-Expected behavior: two independent lane receipts support the same accepted output.
+Expected behavior: two separate lane receipts support the same accepted output.
 
 ---
 
@@ -88,7 +88,7 @@ The result is rejected because the permit did not define a deterministic policy 
 This proof slice demonstrates:
 
 - permit-bound execution
-- independent lane receipts
+- separate lane receipts
 - output comparison
 - deterministic arbitration
 - fail-closed rejection on unresolved divergence

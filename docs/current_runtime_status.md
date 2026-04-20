@@ -18,7 +18,7 @@ The public runtime model is composed of:
 - scoped dispatch
 - receipt and event identity discipline
 - evidence package generation
-- independent verification
+- comparative verification
 - fail-closed handling for incomplete or invalid evidence
 
 Private node identities, service definitions, network topology, runtime paths, and deployment scripts are intentionally withheld.
@@ -29,7 +29,7 @@ Private node identities, service definitions, network topology, runtime paths, a
 
 TriTrap uses conservative status labels for public documentation.
 
-**PROVEN** means behavior has dated evidence or verified operator records.
+**PROVEN** means behavior has dated evidence or verified maintainer records.
 
 **STAGED** means the workflow or control exists in an approval or deployment path but is not being presented as complete public proof.
 
@@ -44,7 +44,7 @@ TriTrap uses conservative status labels for public documentation.
 | Area | Public status | Public description |
 | --- | --- | --- |
 | Gate-controlled dispatch | PROVEN | Workload flow is governed by an authorization point before lane execution. |
-| Independent lane roles | PROVEN | Execution and verification roles are separated for comparison and arbitration. |
+| Separated lane roles | PROVEN | Execution and verification roles are separated for comparison and arbitration. |
 | Evidence package model | PROVEN | Runtime evidence is captured into bounded proof packages with verification metadata. |
 | Hash-chain evidence discipline | PROVEN | Evidence records are validated against ordered integrity expectations. |
 | Fail-closed verifier behavior | PROVEN | Missing or inconsistent proof material is rejected rather than accepted silently. |

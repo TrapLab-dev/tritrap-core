@@ -29,7 +29,7 @@ The public repo does not disclose private mitigations that would make a deployme
 | --- | --- | --- |
 | Forged permit | Permit validation is a required control. Invalid authority should fail closed. | Mitigated by design, deployment-dependent. |
 | Replay attempt | Permit scope, validity, and evidence identity should prevent stale material from being accepted silently. | Mitigated/detected by design, deployment-dependent. |
-| Malicious lane | Independent verification and arbitration can detect divergence or invalid receipts. | Detected where policies and evidence are sufficient. |
+| Malicious lane | Comparative verification and arbitration can detect divergence or invalid receipts. | Detected where policies and evidence are sufficient. |
 | Faulty lane | Divergent or invalid lane output should trigger rejection unless a deterministic policy resolves it. | Detected where comparative verification is used. |
 | Compromised Gate | A compromised authorization role is high impact and must be treated as a serious operational risk. | Not fully mitigated by public protocol alone. |
 | Partial evidence submission | Missing required proof material should fail closed. | Mitigated by verifier contract. |
@@ -59,9 +59,9 @@ This is especially important for:
 
 TriTrap does not claim that architecture alone solves:
 
-- compromised operator environments
+- compromised deployment environments
 - compromised key material
-- identical model failures across independent lanes
+- identical model failures across multiple lanes
 - flawed verification policy design
 - every supply-chain dependency risk
 - all denial-of-service conditions

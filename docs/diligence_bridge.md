@@ -26,8 +26,8 @@ reviewable under control
 | Access class | Description | Material type |
 | --- | --- | --- |
 | Public | Safe for repository publication. | Architecture, protocol concepts, synthetic examples, claim boundaries. |
-| Controlled review | Available only under appropriate review conditions. | Redacted proof summaries, bounded validation results, selected operator records. |
-| Private operator | Not provided through public review. | Raw proof archives, runtime paths, keys, verifier internals, topology, service definitions, operational commands. |
+| Controlled review | Available only under appropriate review conditions. | Redacted proof summaries, bounded validation results, selected maintainer records. |
+| Maintainer-only | Not provided through public review. | Raw proof archives, runtime paths, keys, verifier internals, topology, service definitions, operational commands. |
 
 ---
 

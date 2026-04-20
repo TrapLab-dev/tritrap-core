@@ -10,7 +10,7 @@ Those strengths do not remove every risk. This document states public limitation
 
 Multi-lane execution can increase latency and compute cost.
 
-Fast mode may reduce latency by using a single lane, but it provides less comparative assurance than verified or critical modes.
+Fast mode is a conceptual single-lane posture that may reduce latency but provides less comparative assurance than verified or critical modes. The public repository does not claim fast mode is implemented or publicly proven for the current canonical runtime unless separately designated.
 
 Verified, critical, and audit modes may require more compute, more evidence handling, and more review overhead.
 

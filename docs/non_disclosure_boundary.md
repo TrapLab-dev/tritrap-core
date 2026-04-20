@@ -20,7 +20,7 @@ The public repository may contain:
 - public evidence model
 - public maturity labels
 - fail-closed behavior
-- operator authority principles
+- authority and review principles
 
 The public repository is intended to communicate what TriTrap is and why the model matters without exposing the private deployment pattern.
 
@@ -45,7 +45,7 @@ The following material is intentionally withheld:
 - private audit commands
 - operational timing details
 
-These items belong in private operator records, controlled evidence packages, or internal deployment repositories.
+These items belong in private maintainer records, controlled evidence packages, or internal deployment repositories.
 
 ---
 
@@ -76,7 +76,7 @@ Avoid:
 
 Public docs should use conservative status labels:
 
-- **PROVEN** for behavior backed by dated evidence or verified operator records
+- **PROVEN** for behavior backed by dated evidence or verified maintainer records
 - **STAGED** for controlled workflows not being represented as complete public proof
 - **WITHHELD** for real but private operational details
 - **PLANNED** for known future hardening direction

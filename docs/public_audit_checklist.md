@@ -8,7 +8,7 @@ The goal is to show maturity and credibility without publishing material that wo
 
 ## Public Claim Boundary
 
-Public documents should make clear that TriTrap is a governed execution architecture with controlled dispatch, independent lane roles, verification, and fail-closed evidence handling.
+Public documents should make clear that TriTrap is a governed execution architecture with controlled dispatch, separated lane roles, verification, and fail-closed evidence handling.
 
 Public documents should not claim that this repository is the sole proof source for a live deployment.
 
@@ -17,7 +17,7 @@ Pass criteria:
 - public claims are architecture-level or protocol-level unless clearly marked otherwise
 - runtime posture is described without private deployment mechanics
 - evidence concepts are described without private proof contents
-- live proof remains tied to private operator records or controlled evidence packages
+- live proof remains tied to private maintainer records or controlled evidence packages
 
 ---
 
@@ -25,7 +25,7 @@ Pass criteria:
 
 Use conservative status labels.
 
-- **PROVEN** means behavior is backed by dated evidence or verified operator records
+- **PROVEN** means behavior is backed by dated evidence or verified maintainer records
 - **STAGED** means the workflow exists in a controlled path but is not presented as public proof
 - **WITHHELD** means the detail exists privately but is intentionally not published
 - **PLANNED** means the direction is identified but not represented as complete

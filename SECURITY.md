@@ -42,7 +42,7 @@ The public repository is intended to be reviewable without being directly replic
 
 Private operational material remains outside this repository.
 
-That includes live deployment records, private evidence packages, runtime scripts, service definitions, local verifier internals, topology, key material, and operator-only audit records.
+That includes live deployment records, private evidence packages, runtime scripts, service definitions, local verifier internals, topology, key material, and maintainer-only audit records.
 
 The absence of those materials from this repository is intentional.
 
