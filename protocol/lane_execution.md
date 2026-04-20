@@ -2,7 +2,7 @@
 
 Execution lanes perform the actual inference workload within the TriTrap architecture.
 
-Lanes operate independently and do not communicate with each other during execution.
+In this protocol design, lanes are intended to operate independently and do not communicate with each other during execution.
 
 This independence allows comparative validation and deterministic verification.
 
@@ -40,9 +40,9 @@ Upon receiving a workload:
 
 ## Lane Independence
 
-Lanes must not influence each other's execution results.
+In the protocol, lanes must not influence each other's execution results.
 
-Each lane produces an independent execution outcome.
+Each lane produces its own execution outcome.
 
 This ensures that verification can detect divergence between results.
 

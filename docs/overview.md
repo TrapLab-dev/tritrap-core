@@ -46,7 +46,7 @@ The high-level architecture of TriTrap is illustrated below.
 
 **FIG.1 — TriTrap System Architecture**
 
-The Gate coordinates controlled execution across independent execution lanes and routes results into a verification layer.
+The Gate coordinates controlled execution across separate execution lanes and routes results into a verification layer.
 
 ---
 
@@ -63,7 +63,7 @@ The Gate coordinates controlled execution across independent execution lanes and
 
 TriTrap explores a model where inference execution is governed by explicit authorization artifacts called **permits**.
 
-Execution requests are validated by a **Gate node**, dispatched to independent **execution lanes**, and validated through **receipt verification**.
+Execution requests are validated by a **Gate node**, dispatched to separate **execution lanes**, and validated through **receipt verification**.
 
 The architecture is designed to enable deterministic and auditable execution flows.
 

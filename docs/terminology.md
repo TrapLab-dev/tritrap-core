@@ -133,13 +133,13 @@ The output hash enables comparison between results produced by different executi
 
 A verification approach where outputs are validated using deterministic comparison or defined verification policies.
 
-This ensures that execution outcomes can be evaluated reliably across independent execution lanes.
+This ensures that execution outcomes can be evaluated reliably across separate execution lanes.
 
 ---
 
 ## Multi-Lane Execution
 
-A system design where the same workload may be executed across multiple independent execution lanes.
+A system design where the same workload may be executed across multiple separate execution lanes.
 
 Multi-lane execution enables verification and detection of execution inconsistencies.
 

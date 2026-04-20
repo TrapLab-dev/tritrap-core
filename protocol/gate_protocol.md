@@ -4,6 +4,8 @@ The Gate node is responsible for authorization and routing of inference workload
 
 The Gate acts as the control authority within the TriTrap architecture.
 
+This file is a protocol contract. It is not, by itself, proof of any specific deployment's runtime behavior.
+
 Execution lanes may not initiate workloads independently.
 
 ---
@@ -59,4 +61,4 @@ Execution lanes must verify this permit before performing any work.
 
 The Gate enforces TriTrap's authorization boundary.
 
-Execution lanes trust the Gate for authorization decisions but remain independent for execution outcomes.
+Execution lanes trust the Gate for authorization decisions but are treated as independent for execution outcomes.

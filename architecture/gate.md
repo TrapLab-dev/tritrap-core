@@ -19,7 +19,7 @@ The Gate does not execute workloads itself. Instead, it governs access to the ex
 
 The Gate acts as the control layer that governs entry into the TriTrap execution system. It separates external request sources from the internal execution environment.
 
-This architectural separation allows execution paths to remain independent while maintaining a consistent coordination mechanism.
+This architectural separation allows execution paths to be separable while maintaining a consistent coordination mechanism.
 
 ## Status
 
