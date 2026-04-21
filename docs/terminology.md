@@ -21,10 +21,10 @@ The authorization and routing component of the system.
 
 The Gate node:
 
-• validates client requests  
-• generates execution permits  
-• determines execution lane routing  
-• enforces execution policy  
+• validates client requests
+• generates execution permits
+• determines execution lane routing
+• enforces execution policy
 
 The Gate node does **not perform inference workloads**.
 
@@ -36,9 +36,9 @@ A Permit is the authorization artifact that allows a workload to execute within 
 
 Permits define:
 
-• the workload being authorized  
-• the permitted execution environment  
-• the time validity of the authorization  
+• the workload being authorized
+• the permitted execution environment
+• the time validity of the authorization
 • the verification policy to be applied
 
 Execution lanes must validate permits before performing any workload.
@@ -53,10 +53,10 @@ An isolated execution environment responsible for performing inference workloads
 
 Execution lanes:
 
-• receive workloads from the Gate node  
-• validate permits  
-• execute the authorized workload  
-• generate execution receipts  
+• receive workloads from the Gate node
+• validate permits
+• execute the authorized workload
+• generate execution receipts
 
 Multiple lanes may execute the same workload to enable verification.
 
@@ -68,11 +68,11 @@ A Receipt is the artifact produced by an execution lane after completing a workl
 
 Receipts contain:
 
-• permit reference  
-• workload identity  
-• execution output hash  
-• execution metadata  
-• lane signature  
+• permit reference
+• workload identity
+• execution output hash
+• execution metadata
+• lane signature
 
 Receipts are submitted to the verification layer.
 
@@ -84,11 +84,11 @@ The verification layer evaluates receipts produced by execution lanes.
 
 Responsibilities include:
 
-• validating receipt authenticity  
-• comparing execution outputs  
-• determining the accepted result  
+• validating receipt authenticity
+• comparing execution outputs
+• determining the accepted result
 
-Verification policies may include deterministic comparison or consensus evaluation.
+Verification policies may include explicit comparison rules or consensus evaluation.
 
 ---
 
@@ -116,8 +116,8 @@ A cryptographic hash representing the workload being executed.
 
 The workload hash ensures that:
 
-• the authorized workload matches the executed workload  
-• execution results correspond to the correct request  
+• the authorized workload matches the executed workload
+• execution results correspond to the correct request
 
 ---
 
@@ -129,9 +129,9 @@ The output hash enables comparison between results produced by different executi
 
 ---
 
-## Deterministic Verification
+## Policy-Defined Verification
 
-A verification approach where outputs are validated using deterministic comparison or defined verification policies.
+A verification approach where outputs are validated using explicit comparison rules or defined verification policies.
 
 This ensures that execution outcomes can be evaluated reliably across separate execution lanes.
 
@@ -151,7 +151,7 @@ The architectural separation between authorization and execution.
 
 In TriTrap:
 
-• the Gate node performs authorization  
-• execution lanes perform computation  
+• the Gate node performs authorization
+• execution lanes perform computation
 
 This separation ensures controlled workload execution.

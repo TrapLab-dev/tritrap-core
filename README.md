@@ -1,13 +1,13 @@
 # TriTrap
-TriTrap is a governed execution architecture for deterministic artificial intelligence inference workloads.
+TriTrap is a governed execution architecture for controlled artificial intelligence inference workloads.
 This repository is the invention/protocol/public architecture layer for TriTrap.
 It is not the sole proof source for the current canonical live runtime, which must be grounded in canonical node docs, live service/source records, and dated execution evidence outside this repository.
 The framework introduces mechanisms for:
 
-• permit-based execution authorization  
-• controlled inference environments  
-• multi-lane execution validation  
-• deterministic verification of computation outcomes
+• permit-based execution authorization
+• controlled inference environments
+• multi-lane execution validation
+• policy-defined verification of computation outcomes
 
 ---
 
@@ -22,9 +22,9 @@ TriTrap is built around several architectural principles:
 
 • **Deny-by-default execution** — workloads require explicit authorization before execution.
 
-• **Lane separation** — execution lanes operate independently to allow comparative validation.
+• **Lane separation** — execution lanes operate as separate execution domains to allow comparative validation.
 
-• **Deterministic verification** — outputs are validated through reproducible verification mechanisms.
+• **Policy-defined verification** — outputs are validated through reproducible verification mechanisms.
 
 • **Separation of authorization and execution** — Gate nodes authorize workloads but do not perform inference.
 
@@ -35,9 +35,9 @@ TriTrap introduces a model where inference execution must be explicitly authoriz
 
 The system is built around four primary roles:
 
-• Gate  
-• Execution Lanes  
-• Permit System  
+• Gate
+• Execution Lanes
+• Permit System
 • Verification Layer
 
 ---

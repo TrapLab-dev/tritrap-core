@@ -10,9 +10,9 @@ The Gate does not execute workloads itself. Instead, it governs access to the ex
 
 ## Responsibilities
 
-• Receive execution requests  
-• Route workloads into the execution environment  
-• Maintain deterministic execution flow  
+• Receive execution requests
+• Route workloads into the execution environment
+• Maintain governed execution flow
 • Enforce system entry constraints
 
 ## Role in the Architecture

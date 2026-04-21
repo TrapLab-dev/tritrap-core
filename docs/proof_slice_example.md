@@ -79,7 +79,7 @@ reason: lane outputs diverged under strict_match
 fallback_policy: reject_on_divergence
 ```
 
-The result is rejected because the permit did not define a deterministic policy that accepts divergent outputs.
+The result is rejected because the permit did not define an explicit policy that accepts divergent outputs.
 
 ---
 
@@ -90,7 +90,7 @@ This proof slice demonstrates:
 - permit-bound execution
 - separate lane receipts
 - output comparison
-- deterministic arbitration
+- policy-defined arbitration
 - fail-closed rejection on unresolved divergence
 
 This proof slice does not disclose:

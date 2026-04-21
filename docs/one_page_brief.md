@@ -48,7 +48,7 @@ It defines:
 - permit-scoped dispatch
 - separated lane roles
 - receipt-style evidence
-- deterministic arbitration policies
+- explicit arbitration policies
 - public fail-closed defaults
 - disclosure boundaries between public posture and private proof
 
@@ -82,4 +82,3 @@ The public repository documents:
 - public disclosure boundaries
 
 Private deployment mechanics, live proof archives, verifier internals, topology, keys, paths, and operational commands remain outside the public repository.
-

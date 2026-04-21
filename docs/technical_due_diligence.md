@@ -71,7 +71,7 @@ TriTrap's public posture is fail-closed.
 
 Invalid permits, missing evidence, inconsistent evidence, unverifiable receipts, or unresolved lane divergence should not be accepted silently.
 
-The default public arbitration behavior is `reject_on_divergence` unless the permit defines a deterministic policy that resolves the conflict.
+The default public arbitration behavior is `reject_on_divergence` unless the permit defines an explicit policy that resolves the conflict.
 
 ---
 

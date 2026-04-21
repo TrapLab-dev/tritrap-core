@@ -37,7 +37,7 @@ Verified mode favors comparative assurance.
 
 In verified mode, two or more lanes may execute the same authorized workload and return receipts for comparison.
 
-If required lane outputs diverge, the default public-safe behavior is rejection unless the permit defines a deterministic arbitration policy.
+If required lane outputs diverge, the default public-safe behavior is rejection unless the permit defines an explicit arbitration policy.
 
 ---
 

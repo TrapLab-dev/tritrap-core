@@ -10,10 +10,10 @@ Its purpose is to determine the accepted output for a workload.
 
 The verification layer must:
 
-• collect receipts from execution lanes  
-• verify receipt authenticity  
-• compare execution outcomes  
-• determine accepted result  
+• collect receipts from execution lanes
+• verify receipt authenticity
+• compare execution outcomes
+• determine accepted result
 
 ---
 
@@ -33,7 +33,7 @@ Arbitration determines whether one or more lane receipts support an accepted out
 
 The default public-safe policy is **reject_on_divergence**.
 
-If lane outputs diverge and the permit does not specify a deterministic arbitration policy, the result is rejected.
+If lane outputs diverge and the permit does not specify an explicit arbitration policy, the result is rejected.
 
 This default preserves TriTrap's fail-closed posture.
 
@@ -54,7 +54,7 @@ Agreement is not assumed from receipt presence alone.
 
 ## Public Arbitration Policies
 
-Permits may define deterministic arbitration policies.
+Permits may define explicit arbitration policies.
 
 Public protocol examples include:
 
@@ -75,7 +75,7 @@ The public repository describes policy semantics, not private verifier implement
 When required lanes disagree:
 
 1. the verification layer records the divergence where implemented
-2. the accepted output is withheld unless a deterministic permit policy resolves the conflict
+2. the accepted output is withheld unless an explicit permit policy resolves the conflict
 3. the default outcome is rejection
 4. private operational evidence remains outside this repository
 

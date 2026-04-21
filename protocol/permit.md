@@ -6,10 +6,10 @@ TriTrap operates under a **deny-by-default execution model**. No inference workl
 
 A Permit defines:
 
-• what workload may be executed  
-• where execution may occur  
-• when execution is valid  
-• how results will be verified  
+• what workload may be executed
+• where execution may occur
+• when execution is valid
+• how results will be verified
 
 Permits are issued by the Gate node after validating an incoming request.
 
@@ -77,13 +77,13 @@ If validation fails, the workload must not execute.
 
 Permits enforce TriTrap's **authorization-first execution model**.
 
-Execution lanes are not trusted to initiate workloads independently.  
+Execution lanes are not trusted to initiate workloads outside permit authority.
 All execution must originate from a validated permit issued by the Gate.
 
 This separation ensures that:
 
-• authorization decisions are centralized  
-• execution environments remain controlled  
+• authorization decisions are centralized
+• execution environments remain controlled
 • unauthorized workloads cannot execute
 
 ---

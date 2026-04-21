@@ -4,7 +4,7 @@ Execution lanes perform the actual inference workload within the TriTrap archite
 
 In this protocol design, lanes are intended to operate as separate execution domains and do not communicate with each other during execution.
 
-This separation allows comparative validation and deterministic verification.
+This separation supports comparative validation and policy-defined verification.
 
 Deployment note: lane execution may range from a reference or placeholder lane to
 hardware-backed inference depending on deployment stage. This protocol describes
@@ -17,10 +17,10 @@ currently hardware-backed.
 
 Execution lanes must:
 
-• validate incoming permits  
-• execute the authorized workload  
-• generate execution receipts  
-• return receipts to the verification layer  
+• validate incoming permits
+• execute the authorized workload
+• generate execution receipts
+• return receipts to the verification layer
 
 ---
 
@@ -40,7 +40,7 @@ Upon receiving a workload:
 
 ## Lane Separation
 
-In the protocol, lanes must not influence each other's execution results.
+In the protocol, lanes are intended to avoid influencing each other's execution results.
 
 Each lane produces its own execution outcome.
 
@@ -52,7 +52,7 @@ This ensures that verification can detect divergence between results.
 
 If a lane cannot complete execution:
 
-• an error receipt must be generated  
-• verification layer must be informed  
+• an error receipt must be generated
+• verification layer must be informed
 
 Failure reporting ensures the system can perform arbitration correctly.

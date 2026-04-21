@@ -1,6 +1,6 @@
 # TriTrap Architecture Overview
 
-TriTrap is an experimental architecture for deterministic execution of artificial intelligence inference workloads.
+TriTrap is an experimental architecture for governed execution of artificial intelligence inference workloads.
 This document describes the invention/protocol architecture layer.
 It does not, by itself, prove the current canonical live runtime state.
 
@@ -52,10 +52,10 @@ The Gate coordinates controlled execution across separate execution lanes and ro
 
 ## Research Focus
 
-• deterministic execution paths  
-• governed inference environments  
-• verifiable execution outcomes  
-• architecture for multi-lane validation systems  
+• governed execution paths
+• governed inference environments
+• verifiable execution outcomes
+• architecture for multi-lane validation systems
 
 ---
 
@@ -65,7 +65,7 @@ TriTrap explores a model where inference execution is governed by explicit autho
 
 Execution requests are validated by a **Gate node**, dispatched to separate **execution lanes**, and validated through **receipt verification**.
 
-The architecture is designed to enable deterministic and auditable execution flows.
+The architecture is designed to enable governed and auditable execution flows.
 
 ---
 
@@ -82,11 +82,11 @@ A permit contains metadata used by the Gate to validate execution authority.
 
 Typical fields include:
 
-- Permit ID  
-- Scope Hash  
-- Time-To-Live (TTL)  
-- Key Identifier  
-- Integrity Code  
+- Permit ID
+- Scope Hash
+- Time-To-Live (TTL)
+- Key Identifier
+- Integrity Code
 
 ---
 
@@ -101,11 +101,11 @@ The basic operational flow of the system is shown below.
 
 Execution proceeds through the following stages:
 
-Request  
-→ Gate validation  
-→ Permit generation  
-→ Lane execution  
-→ Receipt creation  
+Request
+→ Gate validation
+→ Permit generation
+→ Lane execution
+→ Receipt creation
 → Verification
 
 ---
@@ -119,7 +119,7 @@ TriTrap supports parallel execution across multiple separate compute lanes.
 
 **FIG.4 — Multi-Lane Execution**
 
-The Gate dispatches workloads to multiple execution lanes where inference tasks are performed concurrently.  
+The Gate dispatches workloads to multiple execution lanes where inference tasks are performed concurrently.
 Results are returned to a verification stage for comparison.
 
 ---
@@ -135,7 +135,7 @@ Execution outcomes are validated through receipt comparison.
 
 Receipts produced by multiple lanes are compared by the verification layer.
 
-If outputs match within defined criteria the result is accepted.  
+If outputs match within defined criteria the result is accepted.
 If outputs diverge the system may reject the result or trigger arbitration.
 
 ---

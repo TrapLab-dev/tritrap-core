@@ -30,7 +30,7 @@ The public repo does not disclose private mitigations that would make a deployme
 | Forged permit | Permit validation is a required control. Invalid authority should fail closed. | Mitigated by design, deployment-dependent. |
 | Replay attempt | Permit scope, validity, and evidence identity should prevent stale material from being accepted silently. | Mitigated/detected by design, deployment-dependent. |
 | Malicious lane | Comparative verification and arbitration can detect divergence or invalid receipts. | Detected where policies and evidence are sufficient. |
-| Faulty lane | Divergent or invalid lane output should trigger rejection unless a deterministic policy resolves it. | Detected where comparative verification is used. |
+| Faulty lane | Divergent or invalid lane output should trigger rejection unless an explicit policy resolves it. | Detected where comparative verification is used. |
 | Compromised Gate | A compromised authorization role is high impact and must be treated as a serious operational risk. | Not fully mitigated by public protocol alone. |
 | Partial evidence submission | Missing required proof material should fail closed. | Mitigated by verifier contract. |
 | Evidence tampering | Integrity and ordering checks should detect inconsistent evidence. | Detected where evidence model is implemented. |
@@ -50,7 +50,7 @@ This is especially important for:
 - stale or replayed material
 - missing evidence
 - broken evidence continuity
-- lane divergence without an explicit deterministic policy
+- lane divergence without an explicit policy
 - verifier uncertainty
 
 ---

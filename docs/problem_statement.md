@@ -2,7 +2,7 @@
 
 Modern artificial intelligence systems rely heavily on inference pipelines that execute computational workloads across distributed infrastructure.
 
-These inference systems are typically optimized for performance and scalability, but they often lack explicit mechanisms for execution authorization and deterministic verification.
+These inference systems are typically optimized for performance and scalability, but they often lack explicit mechanisms for execution authorization and policy-defined verification.
 
 As a result, several architectural challenges emerge.
 
@@ -16,9 +16,9 @@ Requests enter the system and are immediately routed to execution environments.
 
 This model introduces several risks:
 
-• workloads may execute without explicit authorization  
-• execution environments may accept unintended requests  
-• system behavior becomes difficult to control or audit  
+• workloads may execute without explicit authorization
+• execution environments may accept unintended requests
+• system behavior becomes difficult to control or audit
 
 Without a formal authorization boundary, inference pipelines effectively operate on a **trust-by-default execution model**.
 
@@ -30,14 +30,14 @@ Inference results are typically accepted as correct once computation completes.
 
 However, several factors can influence execution outcomes:
 
-• hardware variation  
-• runtime configuration differences  
-• software inconsistencies  
-• transient execution faults  
+• hardware variation
+• runtime configuration differences
+• software inconsistencies
+• transient execution faults
 
 Most inference systems do not incorporate built-in mechanisms to validate results across separate execution environments.
 
-This makes it difficult to verify that an inference result is deterministic or trustworthy.
+This makes it difficult to verify that an inference result satisfies the required policy or is trustworthy.
 
 ---
 
@@ -45,10 +45,10 @@ This makes it difficult to verify that an inference result is deterministic or t
 
 In many inference pipelines, it is difficult to answer fundamental questions about an execution event:
 
-• which workload was executed  
-• which environment executed it  
-• whether execution was authorized  
-• how the result was validated  
+• which workload was executed
+• which environment executed it
+• whether execution was authorized
+• how the result was validated
 
 Without structured artifacts describing execution, tracing system behavior becomes challenging.
 
@@ -60,10 +60,10 @@ As artificial intelligence systems become more widely deployed in critical appli
 
 A robust inference architecture should provide mechanisms to:
 
-• authorize execution requests  
-• enforce controlled execution environments  
-• verify computation outcomes  
-• provide traceable execution artifacts  
+• authorize execution requests
+• enforce controlled execution environments
+• verify computation outcomes
+• provide traceable execution artifacts
 
 ---
 
@@ -73,7 +73,7 @@ TriTrap explores an architectural model designed to address these challenges.
 
 The system introduces a permit-governed execution architecture where inference workloads must be explicitly authorized before execution.
 
-Execution occurs within separate lanes, allowing results to be validated through deterministic verification mechanisms.
+Execution occurs within separate lanes, allowing results to be validated through policy-defined verification mechanisms.
 
 The architecture separates authorization, execution, and verification responsibilities into distinct system layers.
 
@@ -89,7 +89,7 @@ This document frames the original architectural problem. Current public runtime 
 
 The repository documents:
 
-• system architecture  
-• execution protocols  
-• authorization artifacts  
-• verification mechanisms  
+• system architecture
+• execution protocols
+• authorization artifacts
+• verification mechanisms

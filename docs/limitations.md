@@ -47,7 +47,7 @@ Verification is only as strong as the policy being applied.
 
 Weak policies can allow weak conclusions.
 
-For high-consequence workloads, unresolved divergence should fail closed unless a deterministic permit policy explicitly defines another outcome.
+For high-consequence workloads, unresolved divergence should fail closed unless an explicit permit policy defines another outcome.
 
 ---
 
