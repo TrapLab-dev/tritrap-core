@@ -41,6 +41,7 @@ The public repo is intended to be reviewable without exposing private deployment
 - [Controlled Validation Backbone](controlled_validation_backbone.md) - public-safe validation cases and evidence classes
 - [Proof Slice Example](proof_slice_example.md) - synthetic governed-run example
 - [Runtime Maturity Matrix](runtime_maturity_matrix.md) - public-safe maturity summary
+- [Public Roadmap](public_roadmap.md) - public-safe documentation and review direction
 
 ---
 
@@ -55,6 +56,14 @@ The public repo is intended to be reviewable without exposing private deployment
 - [Technical Due Diligence](technical_due_diligence.md) - reviewer shortcut
 - [Diligence Bridge](diligence_bridge.md) - controlled review without public replication
 - [Security Policy](../SECURITY.md) - responsible disclosure and repository scope
+- [Notice](../NOTICE.md) - review-only / all-rights-reserved posture unless separately licensed
+
+---
+
+## Contact and Brand Routing
+
+- [Contact and Review](contact_and_review.md) - reviewer and partner routing
+- [Brand and Domain Boundary](brand_and_domain_boundary.md) - public domain and brand roles
 
 ---
 

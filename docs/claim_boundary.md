@@ -15,6 +15,8 @@ TriTrap publicly claims the following architecture and protocol posture:
 - permit-scoped dispatch
 - receipt-style evidence concepts
 - verification and arbitration concepts
+- governed compute commitment concepts
+- transaction-bound telemetry concepts
 - fail-closed handling for invalid, incomplete, or divergent evidence
 - public evidence package model
 - public execution modes that trade latency for assurance
@@ -37,6 +39,9 @@ This repository does not claim:
 - that multi-lane execution removes all correctness risk
 - that public synthetic examples are private operational evidence
 - that private verifier internals are disclosed
+- that public documentation publishes private telemetry implementation proof
+- that public documentation publishes private accelerator or specialized-compute proof
+- that specialized compute output is the default final response in every deployment
 
 These are boundaries, not retreats. They keep the public repo accurate.
 
@@ -59,6 +64,8 @@ Examples of material that may be **WITHHELD**:
 - service definitions
 - operational commands
 - key material
+- private telemetry artifacts
+- specialized-compute receipts or evidence records
 
 Examples of material that should be marked **NOT IMPLEMENTED** only when true:
 

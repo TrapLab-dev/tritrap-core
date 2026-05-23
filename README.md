@@ -8,6 +8,8 @@ The framework introduces mechanisms for:
 • controlled inference environments
 • multi-lane execution validation
 • policy-defined verification of computation outcomes
+• governed compute commitment
+• transaction-bound telemetry concepts
 
 ---
 
@@ -64,10 +66,14 @@ Current public runtime documentation:
 - [Technical Due Diligence](docs/technical_due_diligence.md) - reviewer shortcut
 - [Diligence Bridge](docs/diligence_bridge.md) - controlled review without public replication
 - [One Page Brief](docs/one_page_brief.md) - fast, public-safe summary
+- [Contact and Review](docs/contact_and_review.md) - reviewer and partner routing
+- [Public Roadmap](docs/public_roadmap.md) - public-safe documentation direction
+- [Brand and Domain Boundary](docs/brand_and_domain_boundary.md) - domain and brand routing
 - [Use Cases](docs/use_cases.md) - grounded application areas
 - [Partner Overview](docs/partner_overview.md) - integration and evaluation framing
 - [Design Philosophy](docs/design_philosophy.md) - sober engineering principles
 - [Security Policy](SECURITY.md) - responsible disclosure and repository scope
+- [Notice](NOTICE.md) - review-only / all-rights-reserved posture unless separately licensed
 
 ---
 
@@ -116,9 +122,16 @@ tritrap-core/
 │  ├─ technical_due_diligence.md
 │  ├─ diligence_bridge.md
 │  ├─ one_page_brief.md
+│  ├─ contact_and_review.md
+│  ├─ public_roadmap.md
+│  ├─ brand_and_domain_boundary.md
 │  ├─ use_cases.md
 │  ├─ partner_overview.md
 │  └─ design_philosophy.md
+│
+├─ .github/
+│  ├─ ISSUE_TEMPLATE/
+│  └─ PULL_REQUEST_TEMPLATE.md
 │
 ├─ figures/
 │  ├─ FIG1_architecture.png
@@ -127,6 +140,7 @@ tritrap-core/
 │  ├─ FIG4_multilane_execution.png
 │  └─ FIG5_receipt_verification.png
 │
+├─ NOTICE.md
 ├─ SECURITY.md
 └─ README.md
 ```
