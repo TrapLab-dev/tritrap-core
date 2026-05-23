@@ -50,7 +50,7 @@ TriTrap uses conservative status labels for public documentation.
 | Evidence package model | PROVEN | Runtime evidence is captured into bounded proof packages with verification metadata. |
 | Hash-chain evidence discipline | PROVEN | Evidence records are validated against ordered integrity expectations. |
 | Fail-closed verifier behavior | PROVEN | Missing or inconsistent proof material is rejected rather than accepted silently. |
-| Governed compute commitment | STAGED | Public docs describe the concept that expensive or specialized compute should be committed only under explicit authorization. Private implementation evidence is withheld. |
+| Governed compute commitment | STAGED | Public docs describe the concept that expensive or specialized compute should be committed only under explicit authorization, including policy-driven avoidance of unnecessary escalation to specialized compute. Private implementation evidence is withheld. |
 | Transaction-bound telemetry | STAGED | Public docs describe telemetry as evidence that should bind activity to a governed transaction. Private implementation evidence is withheld. |
 | Recurring runtime operation | STAGED | Recurring operation is part of the hardening direction, with private operational details withheld. |
 | Status and audit visibility | STAGED | Runtime status and audit posture are part of the hardening direction, with private commands withheld. |

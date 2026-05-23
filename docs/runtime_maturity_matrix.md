@@ -28,7 +28,7 @@ It is intended for review and orientation. It does not publish private deploymen
 | Evidence package model | PROVEN | Runtime evidence is represented as bounded proof artifacts. | Withheld proof packages. |
 | Hash-chain evidence model | PROVEN | Ordered integrity checking is part of the public evidence posture. | Withheld verifier outputs and private evidence. |
 | Fail-closed behavior | PROVEN | Missing or inconsistent evidence is rejected rather than accepted silently. | Withheld canary and verifier records. |
-| Governed compute commitment | STAGED | Expensive or specialized compute should be committed only under explicit governed authorization. | Withheld implementation records and controlled evidence. |
+| Governed compute commitment | STAGED | Expensive or specialized compute should be committed only under explicit governed authorization, including policy-driven avoidance of unnecessary escalation. | Withheld implementation records and controlled evidence. |
 | Transaction-bound telemetry | STAGED | Telemetry should bind observed activity to a governed transaction rather than remain ambient. | Withheld implementation records and controlled evidence. |
 | Recurring operation | STAGED | Recurring runtime operation is part of the hardening posture. | Withheld service records and timing details. |
 | Status and audit visibility | STAGED | Runtime visibility is treated as a controlled operational requirement. | Withheld audit commands and outputs. |

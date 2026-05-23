@@ -10,6 +10,7 @@ A Permit defines:
 • where execution may occur
 • when execution is valid
 • how results will be verified
+• whether specialized compute commitment is authorized under policy
 
 Permits are issued by the Gate node after validating an incoming request.
 
@@ -85,6 +86,7 @@ This separation ensures that:
 • authorization decisions are centralized
 • execution environments remain controlled
 • unauthorized workloads cannot execute
+• specialized compute is not committed without explicit policy authorization
 
 ---
 

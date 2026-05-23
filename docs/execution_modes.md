@@ -71,5 +71,22 @@ Execution mode selection is a policy decision:
 - verified mode increases assurance and compute cost
 - critical mode prioritizes strict rejection on unresolved divergence
 - audit mode prioritizes reviewable evidence boundaries
+- policy may require or deny specialized compute commitment based on workload context
+- absence of explicit policy should not be treated as automatic authorization for heavier compute
+- policy can prevent unnecessary escalation to specialized or GPU-class compute by requiring explicit authorization
 
 The permit or governing policy should define the required execution mode.
+
+---
+
+## Compute Commitment Boundary
+
+TriTrap's public architecture posture treats compute commitment as governed, not automatic.
+
+Public-safe concept:
+
+- policy may escalate workloads to specialized compute when explicitly authorized
+- policy may keep workloads on lighter authorized paths when escalation is not required
+- de-escalation by policy is valid and should not be treated as a failure condition by default
+
+This section states architecture and review posture. It does not publish private runtime implementation details or measured efficiency claims. The primary claim is governance and authorization discipline, not measured savings.

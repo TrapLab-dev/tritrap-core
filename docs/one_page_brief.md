@@ -49,10 +49,13 @@ It defines:
 - separated lane roles
 - receipt-style evidence
 - explicit arbitration policies
+- resource-aware compute commitment under policy
+- policy-gated escalation and de-escalation for specialized compute
 - public fail-closed defaults
 - disclosure boundaries between public posture and private proof
 
 The goal is not to make every run slower. The goal is to let policy decide when speed, verification, or auditability matters most.
+In public terms, expensive or specialized compute should be committed only when policy explicitly authorizes it, including avoiding unnecessary escalation to GPU-class lanes when policy does not require it.
 
 ---
 

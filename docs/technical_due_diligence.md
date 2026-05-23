@@ -20,6 +20,8 @@ The public repository establishes:
 
 - architecture roles and protocol concepts
 - permit-scoped execution model
+- resource-aware compute commitment and policy-gated escalation concepts
+- policy can prevent unnecessary escalation to specialized or GPU-class compute by requiring explicit authorization
 - receipt-style evidence model
 - arbitration and divergence handling concepts
 - default fail-closed public posture
@@ -60,6 +62,7 @@ The public repo does not claim:
 - that every lane is hardware-backed
 - that all deployments have identical evidence storage
 - that multi-lane execution proves universal correctness
+- that public documentation includes measured power, efficiency, or benchmark proof for compute commitment behavior
 - that private evidence has been published
 - that every planned hardening item is complete
 
